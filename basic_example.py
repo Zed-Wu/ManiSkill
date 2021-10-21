@@ -20,10 +20,12 @@ print(3)
 print(env.observation_space) # this shows the structure of the observation, openai gym's format
 print(env.action_space) # this shows the action space, openai gym's format
 
-for level_idx in range(0, 5): # level_idx is a random seed
+# for level_idx in range(0, 5): # level_idx is a random seed
+for level_idx in range(0, 2): # level_idx is a random seed
     obs = env.reset(level=level_idx)
     print('#### Level {:d}'.format(level_idx))
-    for i_step in range(100000):
+    # for i_step in range(100000):
+    for i_step in range(5):
         # env.render('human') # a display is required to use this function, rendering will slower the running speed
         action = env.action_space.sample()
         obs, reward, done, info = env.step(action) # take a random action
