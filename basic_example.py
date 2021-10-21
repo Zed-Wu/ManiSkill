@@ -3,7 +3,7 @@ import mani_skill.env
 
 from gym import envs
 for env in envs.registry.all():
-    if str(env.id).find("OpenCabinetDoor") >= 0 or \
+    if str(env.id).find("OpenCabinetDoor-v0") >= 0 or \
         str(env.id).find("OpenCabinetDoor") >= 0 or \
         str(env.id).find("OpenCabinetDoor") >= 0 or \
         str(env.id).find("OpenCabinetDoor") >= 0:
