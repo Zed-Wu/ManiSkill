@@ -1,10 +1,13 @@
 import gym
 import mani_skill.env
 
+print(1)
 env = gym.make('OpenCabinetDoor-v0')
+print(2)
 # full environment list can be found in available_environments.txt
 
 env.set_env_mode(obs_mode='state', reward_type='sparse')
+print(3)
 # obs_mode can be 'state', 'pointcloud' or 'rgbd'
 # reward_type can be 'sparse' or 'dense'
 print(env.observation_space) # this shows the structure of the observation, openai gym's format
