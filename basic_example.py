@@ -8,7 +8,8 @@ for env in envs.registry.all():
         print(env.id)
 
 print(1)
-env = gym.make('OpenCabinetDoor-v0')
+# env = gym.make('OpenCabinetDoor-v0')
+nv = gym.make('OpenCabinetDoor_1077_link_0-v0')
 print(2)
 # full environment list can be found in available_environments.txt
 
