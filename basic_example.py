@@ -13,7 +13,8 @@ env = gym.make('OpenCabinetDoor-v0')
 print(2)
 # full environment list can be found in available_environments.txt
 
-env.set_env_mode(obs_mode='state', reward_type='sparse')
+# env.set_env_mode(obs_mode='state', reward_type='sparse')
+env.set_env_mode(obs_mode='pointcloud', reward_type='dense')
 print(3)
 # obs_mode can be 'state', 'pointcloud' or 'rgbd'
 # reward_type can be 'sparse' or 'dense'
