@@ -1,6 +1,10 @@
 import gym
 import mani_skill.env
 
+from gym import envs
+for env in envs.registry.all():
+    print(env.id)
+    
 print(1)
 env = gym.make('OpenCabinetDoor-v0')
 print(2)
